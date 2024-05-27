@@ -1,28 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box
+    box-sizing: border-box;
 }
 
-header{
-    padding: 16px 0;
-    background-color: rgb(242, 77, 77);
-    color: white;
-}    
-
-header,
-section h2
-section h3
-form button {
-    font-family:"Bungee", cursive;
-    font-weight: normal;
-}
-
-body, input, textarea {
+body {
     font-family: "Roboto", sans-serif;
 }
 
-header nav li{
+header {
+    padding: 16px 0;
+    background-color: rgb(242, 77, 77);
+    color: white;
+}
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: "Bungee", cursive;
+    font-weight: normal;
+}
+
+header nav li {
     display: inline;
     margin-left: 16px;
     font-size: 18px;
@@ -33,14 +33,14 @@ header nav li a {
     text-decoration: none;
 }
 
-.container{
+.container {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
 }
 
-header .container, 
-section .container{
+header .container,
+section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +52,7 @@ section .container{
 
 .brands-list li {
     display: inline;
-    margin right: 8px;
+    margin-right: 8px;
 }
 
 section .container {
@@ -68,12 +68,13 @@ section h2 {
 }
 
 section {
-    color: rgb(242, 77, 77)
+    color: rgb(242, 77, 77);
 }
 
 section p {
     margin-bottom: 8px;
 }
+
 .store-front {
     margin-right: 32px;
 }
@@ -81,12 +82,13 @@ section p {
 .social-links img {
     height: 24px;
 }
+
 .social-links li {
     display: inline;
     margin-right: 8px;
 }
 
-.social-links li a {
+social-links li a {
     text-decoration: none;
 }
 
@@ -97,13 +99,24 @@ section p {
 .contact-methods {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-methods > div {
+    flex: 1;
+    margin-right: 16px;
+}
+
+.contact-methods > div:last-child {
+    margin-right: 0;
 }
 
 form input,
-textarea,
-form button{
+form textarea,
+form button {
     display: block;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     margin-bottom: 8px;
     padding: 8px;
 }
@@ -118,21 +131,22 @@ section h3 {
 }
 
 form button {
-    background-color:rgb(242, 77, 77);
-    color:aliceblue;
+    background-color: rgb(242, 77, 77);
+    color: aliceblue;
     border: none;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color:rgb(222, 103, 103) ;
+    background-color: rgb(222, 103, 103);
 }
-input:focus, textarea:focus{
-    outline-color:rgb(242, 77, 77) ;
+
+input:focus, textarea:focus {
+    outline-color: rgb(242, 77, 77);
 }
 
 footer {
-    background-color:rgb(242, 77, 77) ;
+    background-color: rgb(242, 77, 77);
     color: aliceblue;
-    padding: 16px 0;
+    padding: 16px 0;
 }
